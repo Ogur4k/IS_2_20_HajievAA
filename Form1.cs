@@ -40,9 +40,9 @@ namespace AppBarber
                 
                 label2.Text = "Зравствуйте,"+Auth.auth_fio;
                 label4.Text = "Должность: "+Auth.auth_post;
-                label3.Text = "Успешный вход";
-                //Красим текст в label в зелёный цвет
-                label3.ForeColor = Color.Green;
+                
+                
+                
 
             }
             //иначе
