@@ -13,8 +13,8 @@ namespace AppBarber
 {
     public partial class Auth1 : Form
     {
-
-        string connStr = "server=10.90.12.110;port=33333;user=st_2_20_28;database=is_2_20_st28_KURS;password=29461060;";
+        //string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_20_28;database=is_2_20_st28_KURS;password=29461060;"; //для дома
+        string connStr = "server=10.90.12.110;port=33333;user=st_2_20_28;database=is_2_20_st28_KURS;password=29461060;";        // для чюка
 
 
         MySqlConnection conn;
