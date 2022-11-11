@@ -44,6 +44,7 @@ namespace AppBarber
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(218)))));
             this.button1.Location = new System.Drawing.Point(186, 120);
             this.button1.Name = "button1";
@@ -59,6 +60,7 @@ namespace AppBarber
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(218)))));
             this.button2.Location = new System.Drawing.Point(12, 120);
             this.button2.Name = "button2";
