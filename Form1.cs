@@ -67,5 +67,17 @@ namespace AppBarber
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form1 fr = new Form1();
+            fr.Show();
+        }
     }
 }
