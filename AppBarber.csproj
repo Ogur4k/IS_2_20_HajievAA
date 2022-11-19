@@ -161,6 +161,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Making_an_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Making_an_order.Designer.cs">
+      <DependentUpon>Making_an_order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Auth1.resx">

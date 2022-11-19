@@ -16,6 +16,23 @@ namespace AppBarber
         public Form1()
         {
             InitializeComponent();
+            InitializeTimePicker();
+        }
+        Form NowForm;
+        void ChangeWin(Form changer)
+        {
+            NowForm = changer;
+            if (NowForm != null)
+            {
+                NowForm.Close();
+            }
+            changer.TopLevel = false;
+            changer.FormBorderStyle = FormBorderStyle.None;
+            changer.Dock = DockStyle.Fill;
+            panel4.Controls.Add(changer);
+            panel4.Tag = changer;
+            changer.BringToFront();
+            changer.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,13 +54,8 @@ namespace AppBarber
                 //Отображаем рабочую форму
                 this.Show();
                 //Вытаскиваем из класса поля в label'ы
-                
                 label2.Text = "Зравствуйте,"+Auth.auth_fio;
                 label4.Text = "Должность: "+Auth.auth_post;
-                
-                
-                
-
             }
             //иначе
             else
@@ -70,14 +82,33 @@ namespace AppBarber
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            Application.Exit();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Form1 fr = new Form1();
-            fr.Show();
+            this.Close();
+        }
+        private void InitializeTimePicker()
+        {
+            Timer timer = new Timer();
+            timer.Interval = 5000;
+            timer.Enabled = true;
+            label3.Text += DateTime.Now.ToLongTimeString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ChangeWin(new Making_an_order());
+            }
+            catch (ObjectDisposedException mes)
+            {
+                MessageBox.Show($"{mes.Message} ");
+            }
+            
         }
     }
 }
