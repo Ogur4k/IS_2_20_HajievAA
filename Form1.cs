@@ -16,13 +16,13 @@ namespace AppBarber
         public Form1()
         {
             InitializeComponent();
-            InitializeTimePicker();
+           
         }
         Form NowForm;
         void ChangeWin(Form changer)
         {
             NowForm = changer;
-            if (NowForm != null)
+            if (NowForm == null)
             {
                 NowForm.Close();
             }
@@ -38,6 +38,7 @@ namespace AppBarber
         private void label1_Click(object sender, EventArgs e)
         {
             label1.Size = new System.Drawing.Size(20, 20);
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -93,7 +94,7 @@ namespace AppBarber
         private void InitializeTimePicker()
         {
             Timer timer = new Timer();
-            timer.Interval = 5000;
+            timer.Interval = 1;
             timer.Enabled = true;
             label3.Text += DateTime.Now.ToLongTimeString();
         }

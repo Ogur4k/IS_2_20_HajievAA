@@ -67,7 +67,7 @@ namespace AppBarber
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(170)))));
-            this.label3.Location = new System.Drawing.Point(45, 498);
+            this.label3.Location = new System.Drawing.Point(3, 489);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 2;
@@ -137,7 +137,7 @@ namespace AppBarber
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 511);
+            this.panel1.Size = new System.Drawing.Size(220, 550);
             this.panel1.TabIndex = 7;
             // 
             // panel2
@@ -207,7 +207,7 @@ namespace AppBarber
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(220, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(514, 80);
+            this.panel3.Size = new System.Drawing.Size(530, 80);
             this.panel3.TabIndex = 8;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -245,9 +245,10 @@ namespace AppBarber
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(220, 75);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(220, 80);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(530, 454);
+            this.panel4.Size = new System.Drawing.Size(530, 470);
             this.panel4.TabIndex = 9;
             // 
             // Form1
@@ -262,7 +263,7 @@ namespace AppBarber
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(218)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(750, 550);
             this.MinimumSize = new System.Drawing.Size(750, 550);
